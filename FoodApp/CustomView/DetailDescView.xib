@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DetailDescView" customModule="FoodApp" customModuleProvider="target">
+            <connections>
+                <outlet property="desc" destination="sMR-Nz-8Gd" id="AbL-Bp-pkF"/>
+                <outlet property="detail_viewDesc" destination="iN0-l3-epB" id="Om3-aa-AUT"/>
+                <outlet property="ingredient" destination="tkI-Nw-qij" id="109-n5-aMi"/>
+                <outlet property="ingredientText" destination="jsb-dc-OsY" id="lY4-ew-DQO"/>
+                <outlet property="title1" destination="2kR-QA-7tG" id="K45-B4-L7f"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="350"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TITLE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2kR-QA-7tG">
+                    <rect key="frame" x="10" y="20" width="355" height="26"/>
+                    <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="20"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Desc" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sMR-Nz-8Gd">
+                    <rect key="frame" x="10" y="51" width="355" height="16.5"/>
+                    <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="15"/>
+                    <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ingredients" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tkI-Nw-qij">
+                    <rect key="frame" x="10" y="117.5" width="355" height="26"/>
+                    <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="20"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jsb-dc-OsY">
+                    <rect key="frame" x="10" y="148.5" width="355" height="191.5"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in </string>
+                    <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="15"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="tkI-Nw-qij" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="10" id="2bs-K0-vPG"/>
+                <constraint firstItem="tkI-Nw-qij" firstAttribute="top" secondItem="sMR-Nz-8Gd" secondAttribute="bottom" constant="50" id="2nt-5n-Q9Q"/>
+                <constraint firstItem="2kR-QA-7tG" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="10" id="5BF-WB-tFT"/>
+                <constraint firstItem="sMR-Nz-8Gd" firstAttribute="top" secondItem="2kR-QA-7tG" secondAttribute="bottom" constant="5" id="8gF-bf-hYR"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="jsb-dc-OsY" secondAttribute="bottom" constant="10" id="G33-JO-Sm0"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="2kR-QA-7tG" secondAttribute="trailing" constant="10" id="MBI-TZ-BiT"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="jsb-dc-OsY" secondAttribute="trailing" constant="10" id="RWX-e6-tg3"/>
+                <constraint firstItem="jsb-dc-OsY" firstAttribute="top" secondItem="tkI-Nw-qij" secondAttribute="bottom" constant="5" id="XOP-F1-rTR"/>
+                <constraint firstItem="jsb-dc-OsY" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="10" id="ebw-CP-vFy"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="sMR-Nz-8Gd" secondAttribute="trailing" constant="10" id="hPh-2T-uYD"/>
+                <constraint firstItem="2kR-QA-7tG" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="20" id="k7z-Lg-J9N"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="tkI-Nw-qij" secondAttribute="trailing" constant="10" id="kSE-8y-uqK"/>
+                <constraint firstItem="sMR-Nz-8Gd" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="10" id="wgh-l0-cs0"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="154.40000000000001" y="322.03898050974516"/>
+        </view>
+    </objects>
+</document>

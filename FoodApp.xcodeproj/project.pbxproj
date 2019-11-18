@@ -7,13 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DC557A6A237806EC0035CD76 /* Recipe.xml in Resources */ = {isa = PBXBuildFile; fileRef = DC557A69237806EC0035CD76 /* Recipe.xml */; };
+		DC557A6E237811460035CD76 /* DetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC557A6D237811460035CD76 /* DetailVC.swift */; };
+		DC557A70237812680035CD76 /* DetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC557A6F237812680035CD76 /* DetailView.xib */; };
+		DC557A72237812DC0035CD76 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC557A71237812DC0035CD76 /* DetailView.swift */; };
+		DC557A7A23781CA90035CD76 /* Global.m in Sources */ = {isa = PBXBuildFile; fileRef = DC557A7923781CA90035CD76 /* Global.m */; };
 		DC6DC54023767EA600C6BE40 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6DC53F23767EA600C6BE40 /* AppDelegate.swift */; };
-		DC6DC54223767EA600C6BE40 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6DC54123767EA600C6BE40 /* ViewController.swift */; };
 		DC6DC54523767EA600C6BE40 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC6DC54323767EA600C6BE40 /* Main.storyboard */; };
-		DC6DC54723767EA800C6BE40 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC6DC54623767EA800C6BE40 /* Assets.xcassets */; };
 		DC6DC54A23767EA800C6BE40 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC6DC54823767EA800C6BE40 /* LaunchScreen.storyboard */; };
 		DC6DC55523767EA800C6BE40 /* FoodAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6DC55423767EA800C6BE40 /* FoodAppTests.swift */; };
 		DC6DC56023767EA800C6BE40 /* FoodAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6DC55F23767EA800C6BE40 /* FoodAppUITests.swift */; };
+		DC6DC5702376836200C6BE40 /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6DC56F2376836200C6BE40 /* Food.swift */; };
+		DC6DC5722376867B00C6BE40 /* FoodTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6DC5712376867B00C6BE40 /* FoodTableVC.swift */; };
+		DC6DC57423768ADF00C6BE40 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC6DC57323768ADE00C6BE40 /* Assets.xcassets */; };
+		DC6DC57623768CF800C6BE40 /* FoodTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6DC57523768CF800C6BE40 /* FoodTableCell.swift */; };
+		DC7620D323812D36008C2566 /* DetailDescView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC7620D223812D36008C2566 /* DetailDescView.xib */; };
+		DC7620D523812D57008C2566 /* DetailDescView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7620D423812D57008C2566 /* DetailDescView.swift */; };
+		DCD02F2B2382519500BF8D2F /* recipe.json in Resources */ = {isa = PBXBuildFile; fileRef = DCD02F2A2382519500BF8D2F /* recipe.json */; };
+		DCD02F2D238252B800BF8D2F /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD02F2C238252B800BF8D2F /* Data.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,11 +45,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DC557A69237806EC0035CD76 /* Recipe.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Recipe.xml; sourceTree = "<group>"; };
+		DC557A6D237811460035CD76 /* DetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailVC.swift; sourceTree = "<group>"; };
+		DC557A6F237812680035CD76 /* DetailView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailView.xib; sourceTree = "<group>"; };
+		DC557A71237812DC0035CD76 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		DC557A7723781CA90035CD76 /* FoodApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FoodApp-Bridging-Header.h"; sourceTree = "<group>"; };
+		DC557A7823781CA90035CD76 /* Global.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Global.h; sourceTree = "<group>"; };
+		DC557A7923781CA90035CD76 /* Global.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Global.m; sourceTree = "<group>"; };
 		DC6DC53C23767EA600C6BE40 /* FoodApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC6DC53F23767EA600C6BE40 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DC6DC54123767EA600C6BE40 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DC6DC54423767EA600C6BE40 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		DC6DC54623767EA800C6BE40 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DC6DC54923767EA800C6BE40 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DC6DC54B23767EA800C6BE40 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DC6DC55023767EA800C6BE40 /* FoodAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FoodAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -47,6 +63,14 @@
 		DC6DC55B23767EA800C6BE40 /* FoodAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FoodAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC6DC55F23767EA800C6BE40 /* FoodAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodAppUITests.swift; sourceTree = "<group>"; };
 		DC6DC56123767EA800C6BE40 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC6DC56F2376836200C6BE40 /* Food.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
+		DC6DC5712376867B00C6BE40 /* FoodTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodTableVC.swift; sourceTree = "<group>"; };
+		DC6DC57323768ADE00C6BE40 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DC6DC57523768CF800C6BE40 /* FoodTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodTableCell.swift; sourceTree = "<group>"; };
+		DC7620D223812D36008C2566 /* DetailDescView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailDescView.xib; sourceTree = "<group>"; };
+		DC7620D423812D57008C2566 /* DetailDescView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailDescView.swift; sourceTree = "<group>"; };
+		DCD02F2A2382519500BF8D2F /* recipe.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = recipe.json; sourceTree = "<group>"; };
+		DCD02F2C238252B800BF8D2F /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +98,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DC557A73237816F80035CD76 /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DC6DC5712376867B00C6BE40 /* FoodTableVC.swift */,
+				DC557A6D237811460035CD76 /* DetailVC.swift */,
+			);
+			path = "View Controller";
+			sourceTree = "<group>";
+		};
+		DC557A742378170C0035CD76 /* CustomTableCell */ = {
+			isa = PBXGroup;
+			children = (
+				DC6DC57523768CF800C6BE40 /* FoodTableCell.swift */,
+			);
+			path = CustomTableCell;
+			sourceTree = "<group>";
+		};
+		DC557A752378171D0035CD76 /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				DC557A6F237812680035CD76 /* DetailView.xib */,
+				DC557A71237812DC0035CD76 /* DetailView.swift */,
+				DC7620D223812D36008C2566 /* DetailDescView.xib */,
+				DC7620D423812D57008C2566 /* DetailDescView.swift */,
+			);
+			path = CustomView;
+			sourceTree = "<group>";
+		};
+		DC557A762378174C0035CD76 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DC6DC56F2376836200C6BE40 /* Food.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		DC6DC53323767EA600C6BE40 = {
 			isa = PBXGroup;
 			children = (
@@ -97,12 +157,21 @@
 		DC6DC53E23767EA600C6BE40 /* FoodApp */ = {
 			isa = PBXGroup;
 			children = (
+				DCD02F292382516D00BF8D2F /* Resources */,
+				DC557A762378174C0035CD76 /* Model */,
+				DC557A752378171D0035CD76 /* CustomView */,
+				DC557A742378170C0035CD76 /* CustomTableCell */,
+				DC557A73237816F80035CD76 /* View Controller */,
+				DC6DC57323768ADE00C6BE40 /* Assets.xcassets */,
 				DC6DC53F23767EA600C6BE40 /* AppDelegate.swift */,
-				DC6DC54123767EA600C6BE40 /* ViewController.swift */,
 				DC6DC54323767EA600C6BE40 /* Main.storyboard */,
-				DC6DC54623767EA800C6BE40 /* Assets.xcassets */,
 				DC6DC54823767EA800C6BE40 /* LaunchScreen.storyboard */,
 				DC6DC54B23767EA800C6BE40 /* Info.plist */,
+				DC557A69237806EC0035CD76 /* Recipe.xml */,
+				DC557A7823781CA90035CD76 /* Global.h */,
+				DC557A7923781CA90035CD76 /* Global.m */,
+				DC557A7723781CA90035CD76 /* FoodApp-Bridging-Header.h */,
+				DCD02F2C238252B800BF8D2F /* Data.swift */,
 			);
 			path = FoodApp;
 			sourceTree = "<group>";
@@ -123,6 +192,14 @@
 				DC6DC56123767EA800C6BE40 /* Info.plist */,
 			);
 			path = FoodAppUITests;
+			sourceTree = "<group>";
+		};
+		DCD02F292382516D00BF8D2F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DCD02F2A2382519500BF8D2F /* recipe.json */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,6 +270,7 @@
 				TargetAttributes = {
 					DC6DC53B23767EA600C6BE40 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 					DC6DC54F23767EA800C6BE40 = {
 						CreatedOnToolsVersion = 10.1;
@@ -229,9 +307,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC7620D323812D36008C2566 /* DetailDescView.xib in Resources */,
 				DC6DC54A23767EA800C6BE40 /* LaunchScreen.storyboard in Resources */,
-				DC6DC54723767EA800C6BE40 /* Assets.xcassets in Resources */,
+				DC557A6A237806EC0035CD76 /* Recipe.xml in Resources */,
+				DC6DC57423768ADF00C6BE40 /* Assets.xcassets in Resources */,
 				DC6DC54523767EA600C6BE40 /* Main.storyboard in Resources */,
+				DCD02F2B2382519500BF8D2F /* recipe.json in Resources */,
+				DC557A70237812680035CD76 /* DetailView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,8 +338,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DC6DC54223767EA600C6BE40 /* ViewController.swift in Sources */,
+				DC557A6E237811460035CD76 /* DetailVC.swift in Sources */,
+				DC557A72237812DC0035CD76 /* DetailView.swift in Sources */,
+				DC6DC5722376867B00C6BE40 /* FoodTableVC.swift in Sources */,
+				DC557A7A23781CA90035CD76 /* Global.m in Sources */,
+				DC7620D523812D57008C2566 /* DetailDescView.swift in Sources */,
 				DC6DC54023767EA600C6BE40 /* AppDelegate.swift in Sources */,
+				DC6DC57623768CF800C6BE40 /* FoodTableCell.swift in Sources */,
+				DCD02F2D238252B800BF8D2F /* Data.swift in Sources */,
+				DC6DC5702376836200C6BE40 /* Food.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,6 +521,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = FoodApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -440,6 +530,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = Foodie.FoodApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "FoodApp/FoodApp-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -449,6 +541,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = FoodApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -457,6 +550,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = Foodie.FoodApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "FoodApp/FoodApp-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

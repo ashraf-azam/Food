@@ -1,0 +1,31 @@
+
+[
+    {
+        "id": 1001,
+        "name": "Pasta",
+        "imageName": "bolognese",
+        "ingredients": "2 pounds ripe tomatoes, or 3 cups canned whole peeled tomatoes with their juice, 1 medium sweet yellow onion, 5 tablespoons butter, 1/4 teaspoons salt",
+        "category": "Italian Bolognese made easy"
+    },
+    {
+        "id": 1002,
+        "name": "Burger",
+        "imageName": "burger",
+        "ingredients": "1 pound ground lean (7% fat) beef 1 large egg 1/2 cup minced onion 1/4 cup fine dried bread crumbs 1 tablespoon Worcestershire 1 or 2 cloves garlic, peeled and minced",
+        "category": "Classic American Burger made easy"
+    },
+    {
+        "id": 1003,
+        "name": "Omelette",
+        "imageName": "omolette",
+        "ingredients": "3 eggs beaten, 1 tsp sunflower oil, 1 tsp butter",
+        "category": "Simple Omelette made easy"
+    },
+    {
+        "id": 1004,
+        "name": "Musroom Soup",
+        "imageName": "mushroom_soup",
+        "ingredients": "90g butter, 2 medium onions, roughly chopped 1 garlic, 500g mushrooms, 2 tbsp plain flour, 1l hot chicken stock, 1 bay leaf, 4 tbsp single cream",
+        "category": "Creamy Mushroom soup made easy"
+    }
+]
