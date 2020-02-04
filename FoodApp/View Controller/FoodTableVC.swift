@@ -32,10 +32,11 @@ class FoodTableVC: UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: (indexPath), animated: true)
         let food = foods[indexPath.row]
-        Global.shareInstance().title = food.name;
-        Global.shareInstance().imageFood = UIImage(named:food.imageName)!
-        Global.shareInstance().ingredients = food.ingredients
-        Global.shareInstance().category = food.category
+        let sharedData = global.sharedInstance
+        sharedData.title = food.name
+        sharedData.ingredients = food.ingredients
+        sharedData.category = food.category
+        sharedData.imageFood = UIImage(named:food.imageName)!
         let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
         let newViewController = storyBoard.instantiateViewController(withIdentifier: "DetailVC") as! DetailVC
         self.navigationController?.pushViewController(newViewController, animated: true)

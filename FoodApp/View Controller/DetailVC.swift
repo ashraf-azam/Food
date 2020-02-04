@@ -14,8 +14,9 @@ class DetailVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        let sharedData = global.sharedInstance
         view.backgroundColor = UIColor.darkGray
-        detail_view.image_view.image = Global.shareInstance().imageFood
+        detail_view.image_view.image = sharedData.imageFood
     }
 
 }
