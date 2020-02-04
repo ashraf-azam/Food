@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5BCEE6DC23E9107100549FA6 /* Singleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BCEE6DB23E9107100549FA6 /* Singleton.swift */; };
+		5BCEE6DF23E962CD00549FA6 /* FoodTableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BCEE6DE23E962CD00549FA6 /* FoodTableViewModel.swift */; };
 		DC557A6A237806EC0035CD76 /* Recipe.xml in Resources */ = {isa = PBXBuildFile; fileRef = DC557A69237806EC0035CD76 /* Recipe.xml */; };
 		DC557A6E237811460035CD76 /* DetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC557A6D237811460035CD76 /* DetailVC.swift */; };
 		DC557A70237812680035CD76 /* DetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC557A6F237812680035CD76 /* DetailView.xib */; };
@@ -47,6 +48,7 @@
 
 /* Begin PBXFileReference section */
 		5BCEE6DB23E9107100549FA6 /* Singleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Singleton.swift; sourceTree = "<group>"; };
+		5BCEE6DE23E962CD00549FA6 /* FoodTableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodTableViewModel.swift; sourceTree = "<group>"; };
 		DC557A69237806EC0035CD76 /* Recipe.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Recipe.xml; sourceTree = "<group>"; };
 		DC557A6D237811460035CD76 /* DetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailVC.swift; sourceTree = "<group>"; };
 		DC557A6F237812680035CD76 /* DetailView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailView.xib; sourceTree = "<group>"; };
@@ -100,6 +102,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5BCEE6DD23E9629D00549FA6 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				5BCEE6DE23E962CD00549FA6 /* FoodTableViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		DC557A73237816F80035CD76 /* View Controller */ = {
 			isa = PBXGroup;
 			children = (
@@ -159,6 +169,7 @@
 		DC6DC53E23767EA600C6BE40 /* FoodApp */ = {
 			isa = PBXGroup;
 			children = (
+				5BCEE6DD23E9629D00549FA6 /* ViewModel */,
 				DCD02F292382516D00BF8D2F /* Resources */,
 				DC557A762378174C0035CD76 /* Model */,
 				DC557A752378171D0035CD76 /* CustomView */,
@@ -350,6 +361,7 @@
 				DC6DC54023767EA600C6BE40 /* AppDelegate.swift in Sources */,
 				DC6DC57623768CF800C6BE40 /* FoodTableCell.swift in Sources */,
 				DCD02F2D238252B800BF8D2F /* Data.swift in Sources */,
+				5BCEE6DF23E962CD00549FA6 /* FoodTableViewModel.swift in Sources */,
 				DC6DC5702376836200C6BE40 /* Food.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

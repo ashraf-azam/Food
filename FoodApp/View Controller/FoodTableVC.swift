@@ -9,34 +9,28 @@
 import UIKit
 
 class FoodTableVC: UITableViewController {
-    
-    let foods = Bundle.main.decode([Food].self, from: "recipe.json")
-
+    let dataVM = FoodTableViewModel()
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        print(foods)
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return foods.count
+        return dataVM.foods.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "FoodCell", for: indexPath) as! FoodTableCell
-        let food = foods[indexPath.row]
+        let food = dataVM.foods[indexPath.row]
         cell.food = food
         return cell
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: (indexPath), animated: true)
-        let food = foods[indexPath.row]
-        let sharedData = global.sharedInstance
-        sharedData.title = food.name
-        sharedData.ingredients = food.ingredients
-        sharedData.category = food.category
-        sharedData.imageFood = UIImage(named:food.imageName)!
+        let food = dataVM.foods[indexPath.row]
+        
+        dataVM.setGlobalItem(name: food.name, ingredients: food.ingredients, category: food.category, imageName: UIImage(named:food.imageName)!)
+        
         let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
         let newViewController = storyBoard.instantiateViewController(withIdentifier: "DetailVC") as! DetailVC
         self.navigationController?.pushViewController(newViewController, animated: true)
