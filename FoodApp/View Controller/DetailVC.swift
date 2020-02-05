@@ -9,14 +9,15 @@
 import UIKit
 
 class DetailVC: UIViewController {
+    var selectedFood = [Food]()
+    let dataVM = FoodTableViewModel()
 
     @IBOutlet weak var detail_view: DetailView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let sharedData = global.sharedInstance
         view.backgroundColor = UIColor.darkGray
-        detail_view.image_view.image = sharedData.imageFood
+        detail_view.image_view.image = dataVM.getImage()
     }
 
 }

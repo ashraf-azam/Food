@@ -15,6 +15,9 @@ class DetailDescView: UIView {
     @IBOutlet weak var ingredient: UILabel!
     @IBOutlet weak var ingredientText: UITextView!
     
+    let dataVM = FoodTableViewModel()
+    
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         commonInit()
@@ -26,18 +29,30 @@ class DetailDescView: UIView {
     }
     
     private func commonInit() {
-        let sharedData = global.sharedInstance
         Bundle.main.loadNibNamed("DetailDescView", owner: self, options: nil)
         addSubview(detail_viewDesc)
-        title1.text = sharedData.title
-        desc.text = sharedData.category
-        ingredient.text = "Ingredient"
-        ingredientText.text = sharedData.ingredients
+        self.setText()
         detail_viewDesc.frame = self.bounds
         detail_viewDesc.layer.borderWidth = 0.5
         detail_viewDesc.layer.cornerRadius = 5.0
         detail_viewDesc.layer.masksToBounds = true
         detail_viewDesc.layer.borderColor = UIColor.gray.cgColor
     }
+    
+    private func setText() {
+        let sharedData = global.sharedInstance
+        title1.text = sharedData.title
+        desc.text = sharedData.category
+        ingredient.text = "Ingredient"
+        ingredientText.text = sharedData.ingredients
+    }
+    
+    //get the text from a function in FoodTableViewModel
+//    private func setText() {
+//        title1.text = dataVM.getItem(text: "title")
+//        desc.text = dataVM.getItem(text: "category")
+//        ingredientText.text = dataVM.getItem(text: "ingredients")
+//        ingredient.text = "Ingredient"
+//    }
 
 }

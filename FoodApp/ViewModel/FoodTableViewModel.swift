@@ -10,13 +10,29 @@ import Foundation
 
 class FoodTableViewModel {
     let foods = Bundle.main.decode([Food].self, from: "recipe.json")
+    let sharedData = global.sharedInstance
     
     //save selected cell globally to view in DetailVC
-    func setGlobalItem(name:String, ingredients:String, category:String, imageName:UIImage) {
-        let sharedData = global.sharedInstance
+    func setSelectedItem(name:String, ingredients:String, category:String, imageName:UIImage) {
         sharedData.title = name
         sharedData.ingredients = ingredients
         sharedData.category = category
         sharedData.imageFood = imageName
+    }
+    
+    func getImage() -> UIImage {
+        return sharedData.imageFood
+    }
+    
+    func getItem(text: String) -> String {
+        if text == "title" {
+            return sharedData.title
+        }
+        else if text == "ingredients" {
+            return sharedData.ingredients
+        }
+        else {
+            return sharedData.category
+        }
     }
 }

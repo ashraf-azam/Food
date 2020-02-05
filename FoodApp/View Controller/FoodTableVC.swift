@@ -29,7 +29,10 @@ class FoodTableVC: UITableViewController {
         tableView.deselectRow(at: (indexPath), animated: true)
         let food = dataVM.foods[indexPath.row]
         
-        dataVM.setGlobalItem(name: food.name, ingredients: food.ingredients, category: food.category, imageName: UIImage(named:food.imageName)!)
+        let detailsVC = DetailVC()
+        detailsVC.selectedFood = [dataVM.foods[indexPath.row]]
+        
+        dataVM.setSelectedItem(name: food.name, ingredients: food.ingredients, category: food.category, imageName: UIImage(named:food.imageName)!)
         
         let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
         let newViewController = storyBoard.instantiateViewController(withIdentifier: "DetailVC") as! DetailVC
