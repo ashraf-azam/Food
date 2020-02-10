@@ -7,36 +7,47 @@
 //
 
 import UIKit
+import RxSwift
+import RxCocoa
 
 class FoodTableVC: UITableViewController {
     
+    @IBOutlet var myTable: UITableView!
     let foods = Bundle.main.decode([Food].self, from: "recipe.json")
-
+    let disposeBag = DisposeBag()
+    let sharedData = global.sharedInstance
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        print(foods)
-    }
-
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return foods.count
+        self.selectedModel()
     }
     
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "FoodCell", for: indexPath) as! FoodTableCell
-        let food = foods[indexPath.row]
-        cell.food = food
-        return cell
+    override func viewDidAppear(_ animated: Bool) {
+        myTable.dataSource = nil
+        self.showTableModel()
     }
     
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        tableView.deselectRow(at: (indexPath), animated: true)
-        let food = foods[indexPath.row]
-        let sharedData = global.sharedInstance
-        sharedData.title = food.name
-        sharedData.ingredients = food.ingredients
-        sharedData.category = food.category
-        sharedData.imageFood = UIImage(named:food.imageName)!
+    func showTableModel() {
+        let objFood : Observable<[Food]> = Observable.just(foods)
+        objFood.bind(to: myTable.rx.items(cellIdentifier: "FoodCell")) {
+            _, food, cell in
+            if let cellToUse = cell as? FoodTableCell {
+                cellToUse.food_title.text = food.name
+                cellToUse.img_view.image = UIImage(named: food.imageName)
+            }
+            }
+    }
+    
+    func selectedModel() {
+        myTable.rx.modelSelected(Food.self).subscribe(onNext: {
+            food in
+            self.sharedData.ingredients = food.ingredients
+            self.sharedData.imageFood = UIImage(named:food.imageName)!
+            self.detailVC()
+        })
+    }
+    
+    func detailVC() {
         let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
         let newViewController = storyBoard.instantiateViewController(withIdentifier: "DetailVC") as! DetailVC
         self.navigationController?.pushViewController(newViewController, animated: true)
