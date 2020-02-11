@@ -2,3 +2,4 @@
 Pods/
 Podfile.lock
 FoodApp.xcworkspace/
+.DS_Store

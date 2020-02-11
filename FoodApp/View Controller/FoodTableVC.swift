@@ -35,7 +35,7 @@ class FoodTableVC: UITableViewController {
                 cellToUse.food_title.text = food.name
                 cellToUse.img_view.image = UIImage(named: food.imageName)
             }
-            }
+        }.disposed(by: disposeBag)
     }
     
     func selectedModel() {
@@ -44,7 +44,7 @@ class FoodTableVC: UITableViewController {
             self.sharedData.ingredients = food.ingredients
             self.sharedData.imageFood = UIImage(named:food.imageName)!
             self.detailVC()
-        })
+            }).disposed(by: disposeBag)
     }
     
     func detailVC() {
