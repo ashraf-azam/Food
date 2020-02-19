@@ -113,6 +113,7 @@
                         <viewLayoutGuide key="safeArea" id="pW0-8D-8Xg"/>
                     </view>
                     <connections>
+                        <outlet property="detailDesc" destination="wj8-oo-rsX" id="XVv-Wi-nL9"/>
                         <outlet property="detail_view" destination="Z6E-eZ-96h" id="bNh-nc-4DD"/>
                     </connections>
                 </viewController>

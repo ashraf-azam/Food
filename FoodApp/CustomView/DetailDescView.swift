@@ -29,10 +29,8 @@ class DetailDescView: UIView {
         let sharedData = global.sharedInstance
         Bundle.main.loadNibNamed("DetailDescView", owner: self, options: nil)
         addSubview(detail_viewDesc)
-        title1.text = sharedData.title
         desc.text = sharedData.category
         ingredient.text = "Ingredient"
-        ingredientText.text = sharedData.ingredients
         detail_viewDesc.frame = self.bounds
         detail_viewDesc.layer.borderWidth = 0.5
         detail_viewDesc.layer.cornerRadius = 5.0
